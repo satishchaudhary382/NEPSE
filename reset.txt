@@ -1,0 +1,8 @@
+# Clean all temporary files
+rm -f Thesis3.{aux,bbl,blg,bcf,run.xml,log,out,toc}
+
+# Recompile from scratch
+pdflatex Thesis3.tex
+biber Thesis3
+pdflatex Thesis3.tex
+pdflatex Thesis3.tex
