@@ -141,7 +141,7 @@ This hypothesis tests whether real currency appreciation and depreciation exert 
 
 \textbf{H\textsubscript{0}:} The trade balance responds symmetrically to real appreciation and real depreciation in the long-run; the Wald test fails to reject $\theta^{+} = \theta^{-}$ in the NARDL long-run coefficients.
 
-\textbf{H\textsubscript{1}:} The trade balance responds asymmetrically in the long-run; the Wald test rejects $\theta^{+} = -\theta^{-}$ at the 5\% significance level.
+\textbf{H\textsubscript{1}:} The trade balance responds asymmetrically in the long-run; the Wald test rejects $\theta^{+} = \theta^{-}$ at the 5\% significance level.
 
 \vspace{0.5cm}
 \noindent\textbf{Hypothesis 3: Regime dependent asymmetry}
@@ -604,7 +604,7 @@ The aggregate TBR demonstrates a persistent and deepening deficit over the past 
 \end{figure}
 
 2. India Trade Balance (India TBR):
-The bilateral trade balance with India exhibits a persistent deficit throughout the entire sample period, hovering largely between -0.4 and -0.8. Unlike the aggregate series, the India TBR shows distinct cyclical fluctuations rather than a unilateral collapse. Because the Nepalese Rupee (NPR) is pegged to the Indian Rupee (INR), nominal exchange rate volatility is neutralized. Consequently, the fluctuations in this series are driven not by currency price shocks, but by structural supply-demand factors, agricultural yield cycles, and changes in industrial capacity. The deficit with India remains chronally high due to Nepal's heavy reliance on India for essential imports (petroleum, basic manufactured goods) and the limited competitiveness of Nepalese exports in the Indian market.
+The bilateral trade balance with India exhibits a persistent deficit throughout the entire sample period, hovering largely between -0.4 and -0.8. Unlike the aggregate series, the India TBR shows distinct cyclical fluctuations rather than a unilateral collapse. Because the Nepalese Rupee (NPR) is pegged to the Indian Rupee (INR), nominal exchange rate volatility is neutralized. Consequently, the fluctuations in this series are driven not by currency price shocks, but by structural supply-demand factors, agricultural yield cycles, and changes in industrial capacity. The deficit with India remains chronically high due to Nepal's heavy reliance on India for essential imports (petroleum, basic manufactured goods) and the limited competitiveness of Nepalese exports in the Indian market.
 
 3. Rest of the World Trade Balance (ROW TBR):
 The trade balance with the Rest of the World (ROW) has remained in a persistent deficit throughout the entire sample period, though it exhibits distinct phases of volatility and deepening deterioration. In the 1980s, the ROW TBR experienced significant fluctuations, oscillating between a relatively moderate deficit (peaking above -0.4) and more severe troughs (approaching -1.1). However, from the 1990s onward, the series demonstrates a clear and sustained downward trend. By the post-2010 period, the deficit became deeply entrenched, with the ratio fluctuating mostly below -1.0. This severe and continuous deterioration aligns with the real depreciation of the NPR against hard currencies, the decline of traditional export industries due to rising domestic production costs, and the phasing out of international textile quotas.
@@ -711,7 +711,7 @@ Note. Values in parentheses represent p-values. *** indicates significance at th
 
 \end{table}
 
-As presented in Table 1, the null hypothesis of a unit root cannot be rejected at levels for any of the variables, confirming the visual intuition from the trend plots that the variables contain stochastic trends. However, upon taking the first difference, all variables become stationary at the 1\% significance level under both the ADF and PP tests. Consequently, all variables are integrated of order one, $I(1)$. This satisfies the prerequisite for applying both the linear ARDL and NARDL bounds testing approaches.
+As presented in Table 2, the null hypothesis of a unit root cannot be rejected at levels for any of the variables, confirming the visual intuition from the trend plots that the variables contain stochastic trends. However, upon taking the first difference, all variables become stationary at the 1\% significance level under both the ADF and PP tests. Consequently, all variables are integrated of order one, $I(1)$. This satisfies the prerequisite for applying both the linear ARDL and NARDL bounds testing approaches.
 
 \vspace{0.5cm}
 \noindent\textbf{4.3 Stage 1: Linear ARDL Baseline Estimation}
@@ -878,7 +878,7 @@ To formally test Hypothesis 2, the long-run Wald restriction $\theta^{+} = -\the
 \begin{table}[htbp]
 \raggedright
 
-\textbf{Table 5}\\
+\textbf{Table 6}\\
 \textit{Long-Run Wald Test for Asymmetry}
 
 \vspace{0.3cm}
@@ -931,7 +931,7 @@ To ensure the statistical validity of the NARDL models, a battery of diagnostic 
 \begin{table}[htbp]
 \raggedright
 
-\textbf{Table 6}\\
+\textbf{Table 7}\\
 \textit{NARDL Diagnostic Tests (p-values)}
 
 \vspace{0.3cm}
@@ -1006,11 +1006,80 @@ The findings of this study demonstrate that the failure of the J-curve in Nepal 
 
 First, the analysis of the bilateral India trade validates the theoretical premise of the pegged exchange rate regime. Because the NPR is pegged to the INR, real exchange rate fluctuations are largely driven by inflation differentials, which are absorbed by central bank reserve management. Consequently, the NARDL bounds test found no long-run co-integrating relationship, and the Wald test confirmed symmetry. The peg effectively neutralizes the exchange rate as a short-run or long-run corrective tool for the India trade balance. This extends the findings of \textcite{Adhikari2020-rr} by confirming that within a pegged framework, trade flows respond symmetrically (or not at all) to currency valuation changes because the nominal anchor removes the price transmission mechanism.
 
-Second, the analysis of the Rest of the World (ROW) trade reveals where the true asymmetric dynamics lie. When the REER is allowed to decompose into appreciation and depreciation, the long-run Wald test rejects symmetry at the 10\% level. Specifically, the coefficient for real depreciation (-1.800) is highly significant, while the coefficient for appreciation (0.245) is insignificant. This indicates an inherent structural asymmetry: currency depreciation systematically worsens the trade balance, but currency appreciation does not correspondingly improve it. The significantly negative long-run coefficient for real depreciation provides empirical confirmation that the Marshall-Lerner condition does not hold for Nepal's trade with the rest of the world. Because the sum of import and export price elasticities is less than one, the volume effect of depreciation is entirely dominated by the adverse price effect of more expensive essential imports. As\textcite{pathak2020} noted, when demand for essential imports like petroleum, machinery, and pharmaceuticals is price-inelastic, a depreciation simply raises the domestic NPR cost of survival without reducing import volumes. Meanwhile, Nepalese exporters lack the productive capacity to immediately capitalize on the cheaper currency.
+Second, the analysis of the Rest of the World (ROW) trade reveals where the true asymmetric dynamics lie. When the REER is allowed to decompose into appreciation and depreciation, the long-run Wald test rejects symmetry at the 10\% level. Specifically, the coefficient for real depreciation (-1.800) is highly significant, while the coefficient for appreciation (0.245) is insignificant. This indicates an inherent structural asymmetry: currency depreciation systematically worsens the trade balance, but currency appreciation does not correspondingly improve it. The significantly negative long-run coefficient for real depreciation provides empirical confirmation that the Marshall-Lerner condition does not hold for Nepal's trade with the rest of the world. Because the sum of import and export price elasticities is less than one, the volume effect of depreciation is entirely dominated by the adverse price effect of more expensive essential imports. As \textcite{pathak2020} noted, when demand for essential imports like petroleum, machinery, and pharmaceuticals is price-inelastic, a depreciation simply raises the domestic NPR cost of survival without reducing import volumes. Meanwhile, Nepalese exporters lack the productive capacity to immediately capitalize on the cheaper currency.
 
 Third, the failure of the J-curve to materialize in the long run (Hypothesis 1) confirms the earlier suspicions of \textcite{chaulagai2015}, who identified an "L-Curve" using linear models. While this study employed the advanced NARDL framework to test if non-linearity was hiding the J-curve, the NARDL long-run coefficients for the ROW regime confirm that depreciation has a persistent, negative long-run effect on the trade balance. Therefore, rather than an initial deterioration followed by improvement (J-Curve), or a flat stagnant response (L-Curve as suggested by previous linear studies), Nepal's trade balance with the ROW exhibits a "Worsening Curve"—where depreciation actively deepens the deficit over time due to structural import dependence. The "L-Curve" finding was not just a methodological artifact of linear models; it is a genuine structural feature of Nepal's trade with floating currency regimes. Currency devaluation against the USD and other global currencies acts as an inflationary tax rather than an export stimulus.
 
 Finally, the results strongly justify the theoretical decision to disaggregate the trade data. Had this study relied solely on aggregate data, the F-bounds test would have failed to find co-integration, and the significant asymmetric dynamics operating within the ROW regime would have been masked by the neutralizing effect of the Indian peg. The disaggregated NARDL approach successfully isolates the floating-regime dynamics, proving that exchange rate policy is not a viable standalone tool for addressing Nepal's trade deficit.
+
+\newpage
+% DATA ANALYSIS CENTERED
+\begin{center}
+\textbf{CHAPTER V}
+\end{center}
+\begin{center}
+\textbf{SUMMARY, CONCLUSION AND RECOMMENDATIONS}
+\end{center}
+\setstretch{1.5}
+
+\vspace{0.5cm}
+\noindent\textbf{5.1 Summary of the Study}
+
+The relationship between exchange rate fluctuations and the trade balance remains one of the most debated topics in international macroeconomics. For decades, Nepal has confronted a chronic and deepening trade deficit that defies traditional corrective mechanisms. According to orthodox economic theory—specifically the Marshall-Lerner condition—currency depreciation should naturally stabilize the trade balance by making exports cheaper and imports more expensive. However, despite the steady depreciation of the Nepalese Rupee (NPR) against convertible currencies over the past two decades, Nepal’s trade deficit has surged. Previous studies attempting to explain this paradox relied predominantly on linear models, which operated under the flawed assumption of symmetry—the notion that an economy responds identically to currency appreciation and depreciation. Consequently, these studies failed to provide a conclusive explanation, often concluding that Nepal’s trade balance suffers from an unresponsive "L-Curve."
+
+This thesis investigated this empirical puzzle by employing the Nonlinear Autoregressive Distributed Lag (NARDL) framework developed by Shin et al. (2014) to test for the existence of an asymmetric J-curve in Nepal. The study utilized annual data spanning 45 years (1980–2024) and uniquely disaggregated Nepal’s trade balance into three distinct regimes: the aggregate trade balance, the bilateral trade balance with India (operating under a fixed peg), and the trade balance with the Rest of the World (ROW, operating under a floating regime). A sequential three-stage estimation process—Linear ARDL bounds testing, Error Correction Model (ECM), and NARDL—was applied to each regime. The core objective was to determine whether the absence of a J-curve in previous literature was a genuine structural feature of the Nepalese economy or merely a methodological artifact of using linear, aggregate models.
+
+\vspace{0.5cm}
+\noindent\textbf{5.2 Major Findings}
+
+The empirical analysis yielded three pivotal findings, directly addressing the research hypotheses and resolving the central paradox:
+
+Rejection of the J-Curve Phenomenon (Hypothesis 1): The study found no evidence of a J-curve in any of the three trade regimes. For the aggregate and India models, the F-bounds test revealed no long-run cointegration, rendering the J-curve inapplicable. For the ROW model, where cointegration was robustly established, both the short-run and long-run coefficients for real depreciation were significantly negative. Specifically, the short-run coefficient was -1.484, and the long-run NARDL depreciation coefficient was -1.800. Because depreciation initially worsened the trade balance and continued to deepen the deficit in the long run—rather than showing the expected recovery phase—the J-curve phenomenon definitively does not exist for Nepal.
+
+Presence of Regime-Specific Long-Run Asymmetry (Hypothesis 2): The NARDL Wald test confirmed that asymmetry is not a universal feature but is highly regime-dependent. The aggregate and India models exhibited symmetric adjustment. However, for the ROW model, the null of long-run symmetry was rejected at the 10\% significance level (Wald F = 3.467, p = 0.071). The decomposition revealed a profound structural asymmetry: real depreciation unambiguously worsened the trade balance (-1.800), while real appreciation had no statistically significant effect (0.245, p = 0.774).
+
+Validation of Regime-Dependent Dynamics (Hypothesis 3): The empirical evidence strongly validated the necessity of disaggregating the data by exchange rate regime. The India (pegged) model demonstrated no cointegration and symmetric adjustment, confirming that the bilateral peg effectively mutes the transmission of exchange rate shocks to trade flows. Conversely, the ROW (floating) model displayed robust cointegration, a high speed of adjustment (ECT = -0.926 in the NARDL-ECM), and significant long-run asymmetry. Aggregating these two distinct regimes masked the true asymmetric dynamics of the floating market.
+
+\vspace{0.5cm}
+\noindent\textbf{5.3 Conclusions}
+
+The findings of this study provide a profound resolution to Nepal’s trade deficit paradox. The failure of the J-curve in Nepal is not merely an artifact of model misspecification; it is a reflection of deep-seated structural rigidities within the economy, which are only visible when the data is disaggregated.
+
+First, the analysis of the bilateral India trade validates the theoretical premise of the pegged exchange rate regime. Because the NPR is pegged to the INR, real exchange rate fluctuations are largely driven by inflation differentials, which are absorbed by central bank reserve management rather than transmitted to relative prices. The peg effectively neutralizes the exchange rate as a short-run or long-run corrective tool for the India trade balance. Trade flows with India are governed by structural supply-demand factors, agricultural yield cycles, and industrial capacity, not currency valuation.
+
+Second, the analysis of the ROW trade reveals where the true structural failure lies. The significantly negative long-run coefficient for real depreciation provides empirical confirmation that the Marshall-Lerner condition does not hold for Nepal's trade with the rest of the world. Because the sum of import and export price elasticities is less than one, the volume effect of depreciation is entirely dominated by the adverse price effect of more expensive essential imports. Nepal’s reliance on inelastic imports—such as petroleum, pharmaceuticals, and industrial machinery—means that depreciation simply raises the domestic NPR cost of survival without reducing import volumes. Concurrently, Nepalese exporters lack the productive capacity, technological integration, and scale to immediately capitalize on a cheaper currency.
+
+Consequently, rather than an initial deterioration followed by improvement (the traditional J-Curve), or a flat stagnant response (the "L-Curve" suggested by previous linear studies), Nepal's trade balance with the ROW exhibits a "Worsening Curve." Currency devaluation against hard currencies acts as an inflationary tax rather than an export stimulus. The previous "L-Curve" finding was indeed a methodological artifact of linear models that averaged out this severe asymmetric deterioration.
+
+Ultimately, the results prove that relying on aggregate data obscures reality. Exchange rate policy is not a viable standalone tool for addressing Nepal’s trade deficit, and structural import dependence renders traditional macroeconomic adjustments ineffective.
+
+\vspace{0.5cm}
+\noindent\textbf{5.4 Policy Recommendations}
+
+Based on the empirical findings, the following multi-tiered policy recommendations are proposed for the Government of Nepal, Nepal Rastra Bank (NRB), and relevant economic ministries:
+
+Abandon Exchange Rate Depreciation as a Deficit-Correction Tool: Policymakers must recognize that deliberately allowing the NPR to depreciate against hard currencies will not resolve the trade deficit. Because import demand is highly inelastic and export capacity is constrained, depreciation will only fuel imported inflation, raise the cost of living, and worsen the current account deficit. The focus must shift from currency adjustment to structural reform.
+
+Prioritize Structural Import Substitution and Export Diversification: Since price competitiveness (via currency depreciation) fails to stimulate exports, Nepal must focus on non-price competitiveness. Policies should incentivize domestic production of import substitutes, particularly in agriculture and basic consumer goods, to reduce the heavy reliance on Indian and global imports. Furthermore, export baskets must be diversified beyond traditional primary commodities into value-added, light manufacturing.
+
+Maintain the India Peg for Macroeconomic Stability: The findings confirm that the peg with India effectively insulates bilateral trade from exchange rate volatility and absorbs exogenous shocks. Given that India accounts for the majority of Nepal's essential imports (including petroleum), maintaining the peg is crucial for macroeconomic stability. However, policymakers should focus on improving the quality and competitiveness of Nepalese goods in the Indian market rather than relying on currency adjustments.
+
+Control Domestic Inflation to Prevent Real Appreciation: The study highlights that post-2010 real appreciation of the NPR against the ROW hurt export competitiveness. Since the nominal rate against the USD floats, preventing real appreciation requires strict control over domestic inflation. NRB must maintain prudent monetary policy to ensure that Nepal’s inflation rate does not significantly exceed that of its global trading partners.
+
+Channel Remittances into Productive Capital: Nepal receives substantial remittance inflows (equivalent to ~25\% of GDP), which finance the import demand that widens the trade deficit. The government must introduce targeted fiscal policies, such as tax incentives and dedicated investment bonds, to channel these remittances away from unproductive sectors (like real estate) and toward productive investments in manufacturing, infrastructure, and export-oriented industries.
+
+\vspace{0.5cm}
+\noindent\textbf{5.5 Limitations and Directions for Future Research}
+
+While this study provides robust and novel insights into Nepal’s trade dynamics, certain limitations must be acknowledged, opening avenues for future research:
+
+Data Frequency: Due to the availability of consistent long-term records, this study utilized annual data over a 45-year period. While this provides a robust historical perspective, annual data may smooth over very short-term, quarter-by-quarter dynamics of the J-curve. Future research utilizing quarterly data, if available, could capture these short-run asymmetries more precisely.
+
+Omission of Remittances: Nepal’s import capacity is heavily sustained by remittance inflows. While acknowledged conceptually, remittances were not included as a regressor to preserve the degrees of freedom in the small-sample NARDL framework. Future studies should construct models that integrate remittance cycles with exchange rate asymmetry.
+
+Bilateral Exchange Rate for India: The study employed the multilateral REER for the India model. While the lack of cointegration confirms the peg's insulating effect, constructing a specific bilateral real exchange rate (NPR/INR adjusted for inflation) could provide further granular insights into the specific price transmission mechanism within the pegged regime.
+
+Sectoral Disaggregation: This study disaggregated trade by country regime (India vs. ROW). Future research could further disaggregate the ROW trade by specific commodity groups (e.g., agricultural vs. manufactured goods) to identify which specific sectors drive the "Worsening Curve" phenomenon.
 
 \newpage
 \printbibliography
