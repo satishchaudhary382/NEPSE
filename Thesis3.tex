@@ -754,22 +754,22 @@ The first stage of the inferential analysis involves estimating the linear ARDL 
 \raggedright
 
 \textbf{Table 3}\\
-\textit{Linear ARDL Bounds Test and Long-Run Coefficients}
+\textit{Linear ARDL Bounds Test, Long-Run Coefficients, and Model Fit}
 
 \vspace{0.3cm}
 
 \renewcommand{\arraystretch}{1.4}
-\setlength{\tabcolsep}{12pt}
+\setlength{\tabcolsep}{8pt}
 
-\textbf{Panel A: ARDL Bounds Test}
+\textbf{Panel A: ARDL Bounds Test and Model Fit}
 
-\begin{tabular}{lcccc}
+\begin{tabular}{lccccccc}
 \hline
-Model & Selected ARDL & F-Statistic & 5\% Bounds [I(0), I(1)] & Cointegration? \\
+Model & Selected ARDL & F-Statistic & 5\% Bounds & Cointegration? & R² & Adj. R² \\
 \hline
-Aggregate & (2, 0, 0) & 2.009 & [3.10, 3.87] & No \\
-India & (1, 0, 0) & 0.962 & [3.10, 3.87] & No \\
-ROW & (2, 0, 0) & 5.731 & [3.10, 3.87] & Yes \\
+Aggregate & (2, 0, 0) & 2.009 & [3.10, 3.87] & No  & 0.919 & 0.911 \\
+India     & (1, 0, 0) & 0.962 & [3.10, 3.87] & No  & 0.836 & 0.824 \\
+ROW       & (2, 0, 0) & 5.731 & [3.10, 3.87] & Yes & 0.826 & 0.808 \\
 \hline
 \end{tabular}
 
@@ -790,8 +790,8 @@ C & 5.745 & 0.609 & 9.421 & 0.000*** \\
 \vspace{0.3cm}
 
 \footnotesize
-Note. The critical bounds values are based on the 5\% significance level. 
-*** indicates statistical significance at the 1\% level.
+\textit{Note.} The critical bounds values are based on the 5\% significance level. 
+*** indicates statistical significance at the 1\% level. 
 
 \end{table}
 
@@ -838,7 +838,7 @@ T=43) where the t-test on the ECT may possess more power than the F-bounds test 
 \vspace{0.5cm}
 \noindent\textbf{4.5 Stage 3: Nonlinear ARDL (NARDL) Estimation}
 
-The third stage decomposes the REER into positive (appreciation) and negative (depreciation) partial sums to test for asymmetric effects using the \textcite{Shin2014-ap} NARDL framework. Information criteria selected a parsimonious lag-0 structure for the partial sums across all regimes, which aligns with the peg-induced short-run symmetry narrative discussed in Section 3.2.
+The third stage of the empirical analysis moves from the symmetric specification to the asymmetric framework by decomposing the Real Effective Exchange Rate (REER) into its two constituent partial sums: a positive partial sum capturing cumulative real currency appreciation, and a negative partial sum capturing cumulative real currency depreciation. This decomposition is the defining feature of the Nonlinear Autoregressive Distributed Lag (NARDL) methodology developed by \textcite{Shin2014-ap}, and it allows the model to estimate separate coefficients for appreciation and depreciation rather than imposing a single symmetric exchange rate effect. The purpose of this stage is therefore to formally test for asymmetric effects—that is, to determine whether real appreciation and real depreciation exert statistically different influences on the trade balance across the aggregate, India, and Rest of the World (ROW) regimes. In specifying the NARDL models, the optimal lag structure was selected automatically using the information criteria, and in all three regimes the criteria chose a parsimonious lag-0 structure on both the positive and negative partial sums. This means that only the contemporaneous values of the decomposed exchange rate series enter the regression, with no additional lagged differences of the partial sums included. This outcome is a legitimate result of the data-driven selection procedure rather than a limitation of the model. It is also economically consistent with the peg-induced short-run symmetry narrative discussed in Section 3.2, which argues that Nepal's de facto peg to the Indian Rupee mutes the short-run transmission of real exchange rate movements to the trade balance by absorbing shocks through reserve management, sterilised intervention, and capital-account restrictions rather than allowing them to pass through to relative prices and trade volumes. Under such a regime, the short-run response to a contemporaneous REER shock should dominate any lagged adjustment, and the information criteria's selection of lag-0 on the partial sums therefore aligns with both the econometric properties of the framework and the structural characteristics of the Nepalese economy.
 
 The NARDL bounds test reaffirms the linear ARDL findings: cointegration is absent in the aggregate and India models, but strongly present in the ROW model ($F = 8.318 > 3.67$).
 
@@ -848,24 +848,22 @@ For the ROW model, the long-run asymmetric coefficients reveal critical insights
 \raggedright
 
 \textbf{Table 5}\\
-\textit{NARDL Bounds Test and Long-Run Asymmetric Coefficients}
+\textit{NARDL Bounds Test, Long-Run Asymmetric Coefficients, and Model Fit}
 
 \vspace{0.3cm}
 
 \renewcommand{\arraystretch}{1.4}
-\setlength{\tabcolsep}{12pt}
+\setlength{\tabcolsep}{8pt}
 
-\textbf{Panel A: NARDL Bounds Test}
+\textbf{Panel A: NARDL Bounds Test and Model Fit}
 
-\vspace{0.2cm}
-
-\begin{tabular}{lcccc}
+\begin{tabular}{lccccccc}
 \hline
-Model & Selected NARDL & F-Statistic & 5\% Bounds [I(0), I(1)] & Cointegration? \\
+Model & Selected NARDL & F-Statistic & 5\% Bounds & Cointegration? & R² & Adj. R² \\
 \hline
-Aggregate & (2, 0, 0, 0) & 1.711 & [2.79, 3.67] & No \\
-India & (1, 0, 0, 0) & 0.979 & [2.79, 3.67] & No \\
-ROW & (3, 0, 0, 0) & 8.318 & [2.79, 3.67] & Yes \\
+Aggregate & (2, 0, 0, 0) & 1.711 & [2.79, 3.67] & No  & 0.920 & 0.910 \\
+India     & (1, 0, 0, 0) & 0.979 & [2.79, 3.67] & No  & 0.841 & 0.824 \\
+ROW       & (3, 0, 0, 0) & 8.318 & [2.79, 3.67] & Yes & 0.898 & 0.881 \\
 \hline
 \end{tabular}
 
@@ -880,16 +878,16 @@ ROW & (3, 0, 0, 0) & 8.318 & [2.79, 3.67] & Yes \\
 Regime & Variable & Coefficient & Std. Error & t-Statistic & Prob. \\
 \hline
 Aggregate & REER\_POS & 0.666 & 2.588 & 0.257 & 0.798 \\
-& REER\_NEG & -1.541 & 0.765 & -2.014 & 0.051* \\
-& GDP & -0.989 & 0.772 & -1.280 & 0.208 \\
-
+          & REER\_NEG & -1.541 & 0.765 & -2.014 & 0.051* \\
+          & GDP      & -0.989 & 0.772 & -1.280 & 0.208 \\
+\hline
 India & REER\_POS & 6.749 & 9.391 & 0.718 & 0.476 \\
-& REER\_NEG & -2.656 & 2.912 & -0.911 & 0.367 \\
-& GDP & -2.606 & 2.867 & -0.909 & 0.368 \\
-
+      & REER\_NEG & -2.656 & 2.912 & -0.911 & 0.367 \\
+      & GDP      & -2.606 & 2.867 & -0.909 & 0.368 \\
+\hline
 ROW & REER\_POS & 0.245 & 0.849 & 0.288 & 0.774 \\
-& REER\_NEG & -1.800 & 0.331 & -5.436 & 0.000*** \\
-& GDP & -0.848 & 0.257 & -3.299 & 0.002*** \\
+    & REER\_NEG & -1.800 & 0.331 & -5.436 & 0.000*** \\
+    & GDP      & -0.848 & 0.257 & -3.299 & 0.002*** \\
 \hline
 \end{tabular}
 
@@ -897,8 +895,8 @@ ROW & REER\_POS & 0.245 & 0.849 & 0.288 & 0.774 \\
 
 \footnotesize
 \textit{Note.} REER\_POS and REER\_NEG represent positive and negative changes in the real effective exchange rate, respectively. 
-
-*, **, and *** indicate statistical significance at the 10\%, 5\%, and 1\% levels, respectively.
+Critical bounds values are based on the 5\% significance level. 
+*, **, and *** indicate statistical significance at the 10\%, 5\%, and 1\% levels, respectively. 
 
 \end{table}
 
